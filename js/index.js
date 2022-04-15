@@ -35,10 +35,10 @@ function calcTexiFee() {
     if (distance > 20) {
         sum = fistKm + 19 * secondKm + (distance - 20) * thirdkm + monTime * waitingTime;
     } else if (distance > 1) {
-        sum = fistKm + (distance - 1) * secondKm;
+        sum = fistKm + (distance - 1) * secondKm + monTime * waitingTime;
 
     } else {
-        sum = fistKm * distance;
+        sum = fistKm * distance + monTime * waitingTime;
     }
     alert("Sum of Taxi Fee: " + sum);
 
