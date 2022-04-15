@@ -1,6 +1,6 @@
 function calcTexiFee() {
-    var distance = document.getElementById('txtDistance').value;
-    var waitingTime = document.getElementById('txtWaitingTime').value;
+    var distance = +document.getElementById('txtDistance').value;
+    var waitingTime = +document.getElementById('txtWaitingTime').value;
     var uberType;
     var uberXRadio = document.getElementById('uberX');
     var uberSUVRadio = document.getElementById('uberSUV');
@@ -40,6 +40,6 @@ function calcTexiFee() {
     } else {
         sum = fistKm * distance + monTime * waitingTime;
     }
-    alert("Sum of Taxi Fee: " + sum);
+    alert("Sum of Taxi Fee: " + sum + " VNĐ");
 
 }
