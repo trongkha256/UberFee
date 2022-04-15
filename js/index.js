@@ -40,6 +40,7 @@ function calcTexiFee() {
     } else {
         sum = fistKm * distance + monTime * waitingTime;
     }
-    alert("Sum of Taxi Fee: " + sum + " VNĐ");
+    document.getElementById('divThanhTien').style.display = 'block';
+    document.getElementById('xuatTien').textContent = sum;
 
 }
